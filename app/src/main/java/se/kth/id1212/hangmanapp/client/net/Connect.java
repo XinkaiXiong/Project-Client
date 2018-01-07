@@ -23,7 +23,7 @@ public class Connect {
         fromServer = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
 
-        new Thread(new Listener(handleServerResponse)).start();
+        new Thread(new Handle(handleServerResponse)).start();
     }
 
     public void disconnect(String quitMessage) throws IOException {
@@ -37,11 +37,11 @@ public class Connect {
         toServer.println(message);
     }
 
-    public class Listener implements Runnable {
+    public class Handle implements Runnable {
 
         private final HandleServerResponse handleServerResponse;
 
-        private Listener(HandleServerResponse handleResponse) {
+        private Handle(HandleServerResponse handleResponse) {
             this.handleServerResponse = handleResponse;
         }
 
