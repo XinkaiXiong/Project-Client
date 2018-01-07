@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (!connect) {
                 try {
-                    server.connect("10.0.2.2", 8080, new Printer());
+                    server.connect("130.229.178.234", 8080, new Printer());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
