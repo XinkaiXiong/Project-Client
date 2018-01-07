@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hangman</string>
+    <string name="welcome_message">Welcome to the Hangman!</string>
+    <string name="submit_button">Submit</string>
+    <string name="new_game_button">New Game</string>
+    <string name="quit_button">Quit</string>
+    <string name="rule">You can submit a word or a letter.</string>
+    <string name="number_of_guesses_left">Guesses left:</string>
+    <string name="score_number">0</string>
+    <string name="score_string">Score:</string>
+    <string name="num_guesses">0</string>
+    <string name="score">0</string>
+</resources>
